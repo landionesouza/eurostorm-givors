@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#162338" />
+
+  <!-- ============================================================
+       SORTIE D'IFRAME (suivi de conversion fiable)
+       Si la page de remerciement s'affiche dans l'iframe de
+       réservation GHL, on bascule en plein écran : le pixel se
+       déclenche alors dans le contexte principal (top window),
+       une seule fois, proprement.
+       ⚠️ Doit rester EN PREMIER, avant tout pixel/GTM.
+  ============================================================ -->
+  <script>
+    if (window.top !== window.self) {
+      window.top.location.href = window.location.href;
+    }
+  </script>
+
+  <!-- Page de confirmation : ne pas indexer -->
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- ===== Google Consent Mode v2 (défaut : refus — RGPD/CNIL) ===== -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'functionality_storage': 'granted',
+      'security_storage': 'granted',
+      'wait_for_update': 500
+    });
+    try {
+      if (localStorage.getItem('es_consent') === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted',
+          'analytics_storage': 'granted'
+        });
+      }
+    } catch (e) {}
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P9VBVXZL');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  // RGPD/CNIL : on retient le pixel tant que le consentement n'est pas accordé
+  fbq('consent', 'revoke');
+  fbq('init', '1616665653085876');
+  fbq('track', 'PageView');
+  fbq('track', 'Lead');   // ← CONVERSION : rendez-vous réservé
+  // Consentement déjà donné sur la LP (même domaine) → on libère le pixel
+  try { if (localStorage.getItem('es_consent') === 'granted') { fbq('consent', 'grant'); } } catch(e){}
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1616665653085876&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <title>Merci — Votre diagnostic est réservé · Euro Storm Débosselage</title>
+
+  <!-- ===== PERFORMANCE / FONTS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=8" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+
+  <style>
+    /* ---------- Page de remerciement (réutilise l'identité de la hero) ---------- */
+    .merci-hero {
+      display: grid;
+      place-items: center;
+      min-height: 100svh;
+      text-align: center;
+    }
+    .merci { max-width: 660px; margin: 0 auto; }
+
+    .merci__logo {
+      height: 46px; width: auto; margin: 0 auto 30px;
+      filter: drop-shadow(0 6px 18px rgba(0,0,0,.35));
+    }
+
+    .merci__badge {
+      width: 88px; height: 88px; margin: 0 auto 24px;
+      display: grid; place-items: center;
+      border-radius: 50%;
+      background: var(--green-soft);
+      border: 1px solid var(--green-line);
+      box-shadow: 0 0 0 10px rgba(167,219,95,.06), var(--sh-md);
+      animation: merciPop .55s cubic-bezier(.2,.8,.2,1) both;
+    }
+    .merci__badge svg { width: 44px; height: 44px; stroke: var(--green); }
+    @keyframes merciPop {
+      0%   { transform: scale(.5); opacity: 0; }
+      60%  { transform: scale(1.08); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .merci__title { margin: 4px 0 16px; }
+    .merci__sub { margin-left: auto; margin-right: auto; }
+
+    .merci__next {
+      text-align: left;
+      max-width: 520px;
+      margin: 8px auto 28px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--navy-line);
+      border-radius: var(--r-lg);
+      padding: 20px 22px;
+      box-shadow: var(--sh-md);
+    }
+    .merci__next-title {
+      font-size: 12px; font-weight: 700; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--green); margin: 0 0 14px;
+    }
+    .merci__next ul { display: grid; gap: 12px; }
+    .merci__next li {
+      display: flex; gap: 12px; align-items: flex-start;
+      color: rgba(255,255,255,.86); font-size: 15px; line-height: 1.5;
+    }
+    .merci__step-num {
+      flex: 0 0 24px; width: 24px; height: 24px; margin-top: 1px;
+      display: grid; place-items: center;
+      background: var(--green-soft); color: var(--green);
+      border-radius: 999px; font-size: 12px; font-weight: 800;
+    }
+
+    .merci__cta { display: grid; gap: 12px; max-width: 420px; margin: 0 auto; }
+
+    .merci__home {
+      display: inline-block; margin-top: 22px;
+      color: rgba(255,255,255,.6); font-size: 14px; font-weight: 600;
+      transition: color .2s ease;
+    }
+    .merci__home:hover { color: var(--white); }
+  </style>
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9VBVXZL"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <main>
+    <section class="hero merci-hero" aria-labelledby="merci-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="merci">
+          <img src="assets/logo.svg" alt="Euro Storm Débosselage" class="merci__logo" />
+
+          <div class="merci__badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+
+          <p class="eyebrow eyebrow--light">Réservation confirmée</p>
+
+          <h1 id="merci-title" class="hero__title merci__title">
+            Merci ! Votre diagnostic est <span class="hl">réservé.</span>
+          </h1>
+
+          <p class="hero__sub merci__sub">
+            Votre rendez-vous est bien enregistré. Un expert Euro Storm prépare votre dossier — vous recevrez une confirmation par message.
+          </p>
+
+          <div class="merci__next">
+            <p class="merci__next-title">Et maintenant ?</p>
+            <ul role="list">
+              <li><span class="merci__step-num" aria-hidden="true">1</span> Vous recevez la confirmation de votre créneau.</li>
+              <li><span class="merci__step-num" aria-hidden="true">2</span> Le jour J, nos experts évaluent les dégâts — diagnostic 100% gratuit.</li>
+              <li><span class="merci__step-num" aria-hidden="true">3</span> On vous accompagne sur le dossier d'assurance jusqu'à la restitution.</li>
+            </ul>
+          </div>
+
+          <div class="merci__cta">
+            <a href="https://wa.me/33781270676" class="btn btn--whatsapp btn--lg btn--block" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">📲</span> Une question ? Écrivez-nous sur WhatsApp
+            </a>
+          </div>
+
+          <ul class="hero__trust hero__trust--center" role="list">
+            <li><span class="check" aria-hidden="true">✓</span> Diagnostic 100% gratuit</li>
+            <li><span class="check" aria-hidden="true">✓</span> Réponse sous 24h</li>
+            <li><span class="check" aria-hidden="true">✓</span> +5 000 véhicules réparés</li>
+          </ul>
+
+          <a href="/" class="merci__home">← Retour au site</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       SUIVI DE CONVERSION — LEAD / RENDEZ-VOUS RÉSERVÉ
+       ============================================================
+       Cette page ne s'affiche QU'APRÈS une réservation réussie :
+       c'est l'endroit idéal pour compter une conversion.
+
+       ✅ MÉTHODE RECOMMANDÉE (via GTM, respecte le consentement) :
+          L'événement `rdv_reserve` est poussé dans le dataLayer.
+          Dans GTM (GTM-P9VBVXZL), créez :
+            - un déclencheur « Événement personnalisé » = rdv_reserve
+            - vos balises de conversion (Meta « Schedule »/« Lead »,
+              Google Ads conversion) liées à ce déclencheur.
+
+       ⬇️ OU MÉTHODE DIRECTE : collez vos pixels bruts dans le bloc
+          indiqué plus bas (pensez au consentement RGPD).
+  ============================================================ -->
+  <script>
+    (function () {
+      // Récupère d'éventuels paramètres passés par GHL (?atelier=...&value=...)
+      var params = new URLSearchParams(window.location.search);
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'rdv_reserve',                       // ← déclencheur GTM
+        conversion_type: 'appointment_booked',
+        atelier: params.get('atelier') || undefined,
+        value: params.get('value') || undefined,
+        currency: 'EUR'
+      });
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+
+# Logs / temporários
+*.log
+index.html.bak-sem-oferta

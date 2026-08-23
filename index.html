@@ -1,0 +1,1109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#162338" />
+
+  <!-- ===== Google Consent Mode v2 (défaut : refus — RGPD/CNIL) ===== -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'functionality_storage': 'granted',
+      'security_storage': 'granted',
+      'wait_for_update': 500
+    });
+    // Réapplique un consentement déjà accordé, avant le chargement de GTM
+    try {
+      if (localStorage.getItem('es_consent') === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted',
+          'analytics_storage': 'granted'
+        });
+      }
+    } catch (e) {}
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P9VBVXZL');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  // RGPD/CNIL : on retient le pixel tant que le consentement n'est pas accordé
+  fbq('consent', 'revoke');
+  fbq('init', '1616665653085876');
+  fbq('track', 'PageView');
+  // Si l'utilisateur a déjà accepté lors d'une visite précédente, on libère le pixel
+  try { if (localStorage.getItem('es_consent') === 'granted') { fbq('consent', 'grant'); } } catch(e){}
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1616665653085876&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- ===== SEO PRIMARY ===== -->
+  <title>Grêle à Givors (69) — Franchise offerte | Débosselage sans peinture Euro Storm</title>
+  <meta name="description" content="Voiture grêlée à Givors, Rive-de-Gier, Vienne ou dans le sud lyonnais ? Notre atelier partenaire Garage De L'Europe vous accueille : franchise offerte*, prise en charge assurance et diagnostic gratuit." />
+  <!-- Page de campagne (trafic payant) : on évite l'indexation organique -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://givors.eurostormdebosselage.com/" />
+
+  <!-- ===== OPEN GRAPH (Facebook, WhatsApp, LinkedIn) ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Euro Storm Débosselage" />
+  <meta property="og:url" content="https://givors.eurostormdebosselage.com/" />
+  <meta property="og:title" content="Grêle dans le Rhône ? Franchise offerte* à Givors" />
+  <meta property="og:description" content="Atelier partenaire Garage De L'Europe à Givors. Franchise offerte*, prise en charge assurance, diagnostic gratuit." />
+  <meta property="og:image" content="https://givors.eurostormdebosselage.com/assets/avant-apres.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="800" />
+  <meta property="og:image:alt" content="Avant et après : voiture grêlée restaurée par Euro Storm sans peinture." />
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Grêle dans le Rhône ? Franchise offerte* à Givors" />
+  <meta name="twitter:description" content="Atelier Garage De L'Europe à Givors. Franchise offerte*, diagnostic gratuit." />
+  <meta name="twitter:image" content="https://givors.eurostormdebosselage.com/assets/avant-apres.jpg" />
+
+  <!-- ===== FAVICON ===== -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/logo-square.jpg" />
+  <link rel="apple-touch-icon" href="assets/logo-square.jpg" />
+
+  <!-- ===== PERFORMANCE ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=8" />
+
+  <style>
+    /* Hero : photo de carrosserie grêlée en fond + overlay sombre pour la lisibilité du texte blanc */
+    .hero--photo .hero__bg {
+      background:
+        linear-gradient(180deg, rgba(15,26,44,.80) 0%, rgba(22,35,56,.82) 55%, rgba(31,47,74,.92) 100%),
+        radial-gradient(900px 500px at 80% -10%, rgba(167,219,95,.12), transparent 60%),
+        url('assets/hero-grele.jpg') center/cover no-repeat;
+    }
+    .hero--photo .hero__bg::before { opacity: .3; }
+
+    /* ---------- Exit-intent popup ---------- */
+    .es-exit { position: fixed; inset: 0; z-index: 9999; display: grid; place-items: center; padding: 20px; }
+    .es-exit[hidden] { display: none; }
+    .es-exit__backdrop { position: absolute; inset: 0; background: rgba(14,23,38,.72); backdrop-filter: blur(3px); }
+    .es-exit__panel {
+      position: relative; z-index: 1; width: 100%; max-width: 440px;
+      background: var(--navy-deep); color: #fff;
+      border: 1px solid var(--green-line); border-radius: var(--r-xl);
+      padding: 34px 26px 26px; text-align: center; box-shadow: var(--sh-lg);
+      animation: esExitPop .35s cubic-bezier(.2,.8,.2,1) both;
+    }
+    @keyframes esExitPop { from { transform: translateY(14px) scale(.98); opacity: 0; } to { transform: none; opacity: 1; } }
+    .es-exit__close { position: absolute; top: 10px; right: 16px; font-size: 28px; line-height: 1; color: rgba(255,255,255,.55); background: none; border: 0; cursor: pointer; }
+    .es-exit__close:hover { color: #fff; }
+    .es-exit__eyebrow { color: var(--green); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; font-size: 13px; margin: 0 0 8px; }
+    .es-exit__title { font-size: clamp(22px, 5.2vw, 28px); line-height: 1.15; margin: 0 0 12px; }
+    .es-exit__text { color: rgba(255,255,255,.82); font-size: 15px; line-height: 1.55; margin: 0 auto 22px; max-width: 34ch; }
+    .es-exit__text strong { color: var(--green); }
+    .es-exit__dismiss { display: block; margin: 14px auto 0; color: rgba(255,255,255,.5); font-size: 13px; text-decoration: underline; background: none; border: 0; cursor: pointer; }
+    .es-exit__dismiss:hover { color: #fff; }
+
+    /* ==========================================================
+       OFFRE — barre promo + rareté
+       ========================================================== */
+    /* Barre promo en haut (défile, la nav sticky prend le relais) */
+    .offerbar {
+      position: relative; z-index: 60;
+      background: linear-gradient(90deg, #16351f 0%, #1f4a2b 45%, #16351f 100%);
+      border-bottom: 1px solid var(--green-line);
+      color: #fff; text-align: center;
+      padding: 10px 16px;
+    }
+    .offerbar__inner {
+      max-width: 1120px; margin: 0 auto;
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+      gap: 8px 18px;
+    }
+    .offerbar__deal { font-weight: 800; font-size: clamp(14px, 2.6vw, 16px); letter-spacing: .01em; }
+    .offerbar__deal .gift { margin-right: 6px; }
+    .offerbar__deal .amount { color: var(--green); }
+    .offerbar__sep { opacity: .45; display: none; }
+    @media (min-width: 720px){ .offerbar__sep { display: inline; } }
+
+    /* Compte à rebours */
+    .es-countdown { display: inline-flex; align-items: center; gap: 6px; }
+    .es-countdown__label { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; opacity: .8; }
+    .es-countdown__clock { display: inline-flex; gap: 5px; font-variant-numeric: tabular-nums; }
+    .es-countdown__seg {
+      background: rgba(0,0,0,.28); border: 1px solid rgba(255,255,255,.14);
+      border-radius: 8px; padding: 3px 7px; min-width: 40px; text-align: center; line-height: 1.05;
+    }
+    .es-countdown__num { display: block; font-weight: 800; font-size: 16px; color: #fff; }
+    .es-countdown__unit { display: block; font-size: 9px; text-transform: uppercase; letter-spacing: .06em; opacity: .7; }
+    .es-countdown.is-ended .es-countdown__clock { display: none; }
+    .es-countdown__ended { display: none; font-weight: 700; color: #ffd9d9; }
+    .es-countdown.is-ended .es-countdown__ended { display: inline; }
+    .es-countdown.is-ended .es-countdown__label { display: none; }
+
+    /* Compte à rebours grand format (héros + section finale) */
+    .countdown-block { margin: 22px 0 4px; }
+    .countdown-block .es-countdown { flex-wrap: wrap; justify-content: center; }
+    .countdown-block .es-countdown__seg { min-width: 56px; padding: 8px 10px; }
+    .countdown-block .es-countdown__num { font-size: clamp(22px, 5vw, 30px); }
+    .countdown-block .es-countdown__unit { font-size: 10px; }
+    .countdown-block .es-countdown__label { display:block; width:100%; margin-bottom: 8px; text-align:center; }
+
+    /* Badge offre dans le héros */
+    .offer-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(167,219,95,.12); border: 1px solid var(--green-line);
+      color: var(--green); font-weight: 800; letter-spacing: .01em;
+      padding: 8px 14px; border-radius: 999px; font-size: 14px; margin-bottom: 16px;
+    }
+    .offer-badge .amount { color: #fff; }
+    .offer-badge--pulse { animation: offerBadgePulse 2.4s ease-in-out infinite; }
+    @keyframes offerBadgePulse { 0%,100%{ box-shadow: 0 0 0 0 rgba(167,219,95,.35); } 50%{ box-shadow: 0 0 0 6px rgba(167,219,95,0); } }
+
+    /* Rareté / places limitées */
+    .scarcity {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,138,76,.10); border: 1px solid rgba(255,138,76,.35);
+      color: #ffb98a; font-weight: 700; font-size: 14px;
+      padding: 8px 14px; border-radius: 999px; margin: 4px auto 0;
+    }
+    .scarcity .dot { width: 8px; height: 8px; border-radius: 50%; background: #ff8a4c; box-shadow: 0 0 0 0 rgba(255,138,76,.6); animation: scarcityPulse 1.8s infinite; }
+    @keyframes scarcityPulse { 0%{box-shadow:0 0 0 0 rgba(255,138,76,.55);} 70%{box-shadow:0 0 0 8px rgba(255,138,76,0);} 100%{box-shadow:0 0 0 0 rgba(255,138,76,0);} }
+
+    /* Conditions de l'offre (mention légale / RGPD-DGCCRF) */
+    .offer-terms { font-size: 12px; line-height: 1.5; opacity: .7; max-width: 60ch; margin: 14px auto 0; text-align: center; }
+
+    /* Bandeau : rareté */
+    .offerbar__opening { display: inline-flex; align-items: center; gap: 7px; font-size: 13.5px; font-weight: 700; color: #ffb98a; }
+    .offerbar__opening .dot { width: 8px; height: 8px; border-radius: 50%; background: #ff8a4c; animation: scarcityPulse 1.8s infinite; }
+
+    /* Encart rareté (section réservation) */
+    .opening-note {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: rgba(255,138,76,.10); border: 1px solid rgba(255,138,76,.35);
+      color: #ffb98a; font-weight: 700; font-size: 15px;
+      padding: 12px 18px; border-radius: 14px; margin: 4px auto 18px; text-align: left;
+    }
+    .opening-note strong { color: #fff; }
+  </style>
+
+  <!-- ============================================================
+       JSON-LD STRUCTURED DATA — Local SEO + Rich snippets
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://eurostormdebosselage.com/#org",
+        "name": "Euro Storm Débosselage",
+        "url": "https://givors.eurostormdebosselage.com/",
+        "logo": "https://givors.eurostormdebosselage.com/assets/logo.svg",
+        "description": "Spécialiste du débosselage sans peinture après grêle. Prise en charge assurance, diagnostic gratuit, délais courts.",
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "Auvergne-Rhône-Alpes"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://givors.eurostormdebosselage.com/#service-pdr",
+        "serviceType": "Débosselage sans peinture après grêle",
+        "name": "Réparation grêle sans peinture dans le Rhône (Rive-de-Gier, Givors)",
+        "description": "Restauration de carrosserie après dégâts de grêle sans repeindre ni démonter. Garantie constructeur préservée. Prise en charge par votre assurance.",
+        "provider": { "@id": "https://eurostormdebosselage.com/#org" },
+        "areaServed": "Rhône, Auvergne-Rhône-Alpes",
+        "offers": {
+          "@type": "Offer",
+          "description": "Diagnostic gratuit · réparation sans peinture prise en charge par l'assurance",
+          "price": "0",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "AutoRepair",
+        "@id": "https://givors.eurostormdebosselage.com/#atelier-acheres",
+        "name": "Euro Storm Débosselage — Atelier partenaire de Givors (Garage De L'Europe)",
+        "image": "https://givors.eurostormdebosselage.com/assets/avant-apres.jpg",
+        "url": "https://givors.eurostormdebosselage.com/",
+        "telephone": "+33781270676",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "62 Rue Jean Ligonnet",
+          "addressLocality": "Givors",
+          "postalCode": "69700",
+          "addressRegion": "Auvergne-Rhône-Alpes",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.5936,
+          "longitude": 4.7714
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Rive-de-Gier" },
+          { "@type": "City", "name": "Givors" },
+          { "@type": "City", "name": "Vienne" },
+          { "@type": "City", "name": "Chasse-sur-Rhône" },
+          { "@type": "City", "name": "Grigny" },
+          { "@type": "City", "name": "Lyon" },
+          { "@type": "AdministrativeArea", "name": "Rhône (69)" }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "08:30",
+            "closes": "18:00"
+          }
+        ],
+        "parentOrganization": { "@id": "https://eurostormdebosselage.com/#org" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://givors.eurostormdebosselage.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Ma voiture est-elle éligible à la réparation sans peinture ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dans la grande majorité des cas, oui. Le débosselage sans peinture convient parfaitement aux dommages causés par la grêle. Nos experts réalisent un diagnostic gratuit pour confirmer l'éligibilité et vous expliquer les options disponibles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Dois-je déclarer le sinistre moi-même à mon assurance ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui, la déclaration de sinistre se fait par vous auprès de votre assurance. Mais Euro Storm vous accompagne et vous assiste tout au long du dossier : expertise, devis et suivi."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Combien de temps dure la réparation ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La plupart des véhicules sont restitués en 1 à 3 jours ouvrés selon l'étendue des dégâts. Nous vous communiquons un délai précis lors du diagnostic gratuit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Intervenez-vous à Rive-de-Gier, Givors et dans tout le Rhône ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. Depuis notre atelier partenaire d'Givors, nous intervenons sur Rive-de-Gier, Givors, Vienne, Chasse-sur-Rhône, Grigny, Lyon et tout le département des Rhône (69)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Est-ce que le débosselage sans peinture affecte la garantie constructeur de mon véhicule ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non, elle reste entièrement valide. Le débosselage sans peinture n'implique aucun démontage structurel ni mécanique. Certaines garnitures peuvent toutefois être déposées pour accéder aux panneaux (ciel de toit, garnitures de portes, feux/optiques), sans aucun impact sur la garantie constructeur."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- ============================================================
+       EURO STORM — CONFIGURATION DES CENTRES DE SERVICE
+       ============================================================
+       Pour ajouter / modifier un centre : éditez le tableau ci-dessous.
+       Pour désactiver : active: true  →  active: false
+       Coordonnées GPS : https://www.coordonnees-gps.fr/
+  ============================================================ -->
+  <script>
+    window.EURO_STORM_CENTERS = [
+
+      /* ---------- ATELIER SAINT-JUST-SAINT-RAMBERT (unique) ---------- */
+      {
+        id:          'givors',
+        active:      true,
+        brand:       "Garage De L'Europe",
+        name:        'Atelier Givors',
+        address:     '62 Rue Jean Ligonnet',
+        city:        'Givors',
+        postalCode:  '69700',
+        region:      'Auvergne-Rhône-Alpes',
+        coordinates: { lat: 45.5936, lng: 4.7714 },
+        calendar:    'https://lp.eurostormdebosselage.com/widget/booking/CNPlpXm6WS2WGaZ59jTE?utm_source=meta&utm_medium=paid_social&utm_campaign=givors_grele_franchise&utm_content=lp_givors',
+        mapsLink:    'https://www.google.com/maps/search/?api=1&query=62+Rue+Jean+Ligonnet+69700+Givors'
+      }
+
+      /* ---------- AJOUTEZ LE CENTRE 3 ICI ----------
+      ,{
+        id:          'lyon',
+        active:      true,
+        brand:       'Partenaire Lyon',
+        name:        'Atelier Lyon',
+        address:     '...',
+        city:        'Lyon',
+        postalCode:  '69000',
+        region:      'Auvergne-Rhône-Alpes',
+        coordinates: { lat: 45.7640, lng: 4.8357 },
+        calendar:    'https://api.leadconnectorhq.com/widget/booking/...',
+        mapsLink:    'https://www.google.com/maps/search/?api=1&query=...'
+      }
+      --------------------------------------------- */
+
+    ];
+  </script>
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9VBVXZL"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ============== BARRE PROMO (franchise offerte + rareté) ============== -->
+  <div class="offerbar" id="offerbar" role="region" aria-label="Offre atelier Givors">
+    <div class="offerbar__inner">
+      <span class="offerbar__deal"><span class="gift" aria-hidden="true">🎁</span><span class="amount">Franchise offerte*</span> · jusqu'à 0€ de reste à charge</span>
+      <span class="offerbar__sep" aria-hidden="true">·</span>
+      <span class="offerbar__opening"><span class="dot" aria-hidden="true"></span> Places limitées cette semaine</span>
+    </div>
+  </div>
+
+  <!-- ============== NAV ============== -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" aria-label="Euro Storm Débosselage — Accueil">
+        <img src="assets/logo.svg" alt="Euro Storm Débosselage" class="nav__logo" />
+      </a>
+
+      <nav class="nav__links" aria-label="Navigation principale">
+        <a href="#service">Notre service</a>
+        <a href="#process">Comment ça marche</a>
+        <a href="#avis">Avis clients</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#FORMULAIRE_AGENDA_GHL" class="btn btn--cta nav__cta">
+        Prendre RDV <span aria-hidden="true">→</span>
+      </a>
+
+      <button class="nav__burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu lives OUTSIDE <header> because the header has backdrop-filter,
+       which creates a containing block for position:fixed children and would
+       trap the menu inside the header's bounding box. -->
+  <div id="mobile-menu" class="nav__mobile" hidden>
+    <a href="#service">Notre service</a>
+    <a href="#process">Comment ça marche</a>
+    <a href="#avis">Avis clients</a>
+    <a href="#contact">Contact</a>
+    <a href="#FORMULAIRE_AGENDA_GHL" class="btn btn--cta btn--block">Prendre RDV →</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ============== HERO ============== -->
+    <section class="hero hero--photo" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <p class="eyebrow eyebrow--light">Orages de grêle · Givors · Rive-de-Gier · Vienne (69)</p>
+
+        <span class="offer-badge offer-badge--pulse"><span aria-hidden="true">🎁</span> Offre en cours</span>
+
+        <h1 id="hero-title" class="hero__title">
+          Votre voiture grêlée ? <span class="hl">Franchise offerte*</span> — jusqu'à <span class="hl">0€</span> de reste à charge, à Givors.
+        </h1>
+
+        <p class="hero__sub">
+          Notre atelier partenaire <strong>Garage De L'Europe</strong> vous accueille à Givors. Réparation de grêle <strong>prise en charge par votre assurance</strong>, diagnostic gratuit — et nous prenons votre franchise en charge<sup>*</sup>.
+        </p>
+
+        <div class="hero__ctas">
+          <a href="#FORMULAIRE_AGENDA_GHL" class="btn btn--cta btn--lg">
+            Je réserve mon diagnostic gratuit <span aria-hidden="true">→</span>
+          </a>
+          <a href="#process" class="btn btn--ghost btn--lg">
+            Voir comment ça marche
+          </a>
+        </div>
+
+        <p class="scarcity"><span class="dot" aria-hidden="true"></span> Places limitées à l'atelier de Givors cette semaine</p>
+
+        <ul class="hero__trust" role="list">
+          <li><span class="check" aria-hidden="true">✓</span> Diagnostic 100% gratuit et sans engagement</li>
+          <li><span class="check" aria-hidden="true">✓</span> Prise en charge par votre assurance</li>
+          <li><span class="check" aria-hidden="true">✓</span> +5 000 véhicules réparés</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============== SECTION 10 — CTA FINAL + SÉLECTEUR D'UNITÉ ============== -->
+    <section id="FORMULAIRE_AGENDA_GHL" class="section section--final" aria-labelledby="final-title">
+      <div class="container">
+        <p class="eyebrow eyebrow--light">Atelier Garage De L'Europe · Givors (69)</p>
+        <h2 id="final-title" class="section__title section__title--light section__title--xl">
+          Réservez votre créneau — <span class="hl">franchise offerte*</span>.
+        </h2>
+        <p class="prose prose--light prose--center">
+          Diagnostic gratuit et sans engagement. Nos experts évaluent les dégâts et gèrent votre dossier avec votre assurance.
+        </p>
+
+        <div style="text-align:center;">
+          <span class="opening-note">
+            <span aria-hidden="true">📅</span>
+            <span><strong>Places limitées.</strong> Réservez dès maintenant votre créneau — les disponibilités partent vite.</span>
+          </span>
+        </div>
+
+        <!-- Step indicator -->
+        <div class="steps-pill" aria-hidden="true">
+          <span class="steps-pill__step steps-pill__step--active"><span class="steps-pill__dot">1</span> Votre atelier</span>
+          <span class="steps-pill__sep">→</span>
+          <span class="steps-pill__step"><span class="steps-pill__dot">2</span> Réserver le créneau</span>
+        </div>
+
+        <!-- Locator multi-état : géolocalisation → code postal → manuel -->
+        <div class="locator" id="locator" data-state="intro" aria-live="polite">
+
+          <!-- ============== STATE: INTRO ============== -->
+          <div class="locator__panel" data-state="intro">
+            <div class="locator__icon locator__icon--lg" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="locator__title">Trouvez l'atelier le plus proche</h3>
+            <p class="locator__sub">Pour vous proposer le meilleur créneau, indiquez votre position.</p>
+
+            <div class="locator__actions">
+              <button type="button" class="btn btn--cta btn--lg btn--block" data-action="geo">
+                <span aria-hidden="true">📍</span> Utiliser ma position
+              </button>
+              <button type="button" class="btn btn--ghost btn--block" data-action="postal">
+                <span aria-hidden="true">📮</span> Entrer mon code postal
+              </button>
+              <button type="button" class="locator__link" data-action="manual">
+                Voir tous les ateliers
+              </button>
+            </div>
+          </div>
+
+          <!-- ============== STATE: GEOLOCATING ============== -->
+          <div class="locator__panel" data-state="geolocating" hidden>
+            <div class="locator__spinner" aria-hidden="true"></div>
+            <h3 class="locator__title">Détection en cours…</h3>
+            <p class="locator__sub">Nous calculons l'atelier le plus proche de vous.</p>
+          </div>
+
+          <!-- ============== STATE: POSTAL ============== -->
+          <div class="locator__panel" data-state="postal" hidden>
+            <div class="locator__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 8l9 6 9-6"/></svg>
+            </div>
+            <h3 class="locator__title">Votre code postal</h3>
+            <p class="locator__sub">Saisissez votre code postal — nous trouvons l'atelier le plus proche.</p>
+
+            <form class="locator__form" id="postalForm" novalidate>
+              <label for="postalInput" class="sr-only">Code postal français</label>
+              <div class="locator__input-wrap">
+                <input
+                  id="postalInput"
+                  name="postal"
+                  type="text"
+                  inputmode="numeric"
+                  pattern="[0-9]{5}"
+                  maxlength="5"
+                  autocomplete="postal-code"
+                  placeholder="Ex : 42000"
+                  class="locator__input"
+                  required
+                />
+              </div>
+              <p class="locator__error" id="postalError" hidden role="alert"></p>
+              <button type="submit" class="btn btn--cta btn--lg btn--block">
+                Rechercher l'atelier le plus proche <span aria-hidden="true">→</span>
+              </button>
+              <button type="button" class="locator__link" data-action="back">
+                ← Retour
+              </button>
+            </form>
+          </div>
+
+          <!-- ============== STATE: POSTAL_LOADING ============== -->
+          <div class="locator__panel" data-state="postal_loading" hidden>
+            <div class="locator__spinner" aria-hidden="true"></div>
+            <h3 class="locator__title">Recherche en cours…</h3>
+          </div>
+
+          <!-- ============== STATE: RECOMMENDATION ============== -->
+          <div class="locator__panel" data-state="recommendation" hidden>
+            <div class="locator__match">
+              <span class="locator__match-icon" aria-hidden="true">✨</span>
+              <span>Votre atelier — Givors, Rhône</span>
+            </div>
+            <div class="locator__reco" id="locatorReco">
+              <!-- carte recommandée injectée par JS -->
+            </div>
+          </div>
+
+          <!-- ============== STATE: MANUAL ============== -->
+          <div class="locator__panel" data-state="manual" hidden>
+            <p class="locator__heading">Choisissez votre atelier</p>
+            <div class="locator__actions">
+              <button type="button" class="btn btn--ghost btn--block" data-action="geo">
+                <span aria-hidden="true">📍</span> Trouver le plus proche de moi
+              </button>
+            </div>
+            <div class="locations__grid" id="locatorAll">
+              <!-- toutes les cartes actives injectées par JS -->
+            </div>
+          </div>
+
+          <!-- ============== STATE: ERROR ============== -->
+          <div class="locator__panel" data-state="error" hidden>
+            <div class="locator__icon locator__icon--alert" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            </div>
+            <h3 class="locator__title" id="locatorErrorTitle">Localisation indisponible</h3>
+            <p class="locator__sub" id="locatorErrorMsg">Nous ne pouvons pas vous localiser automatiquement.</p>
+            <div class="locator__actions">
+              <button type="button" class="btn btn--cta btn--block" data-action="postal">
+                <span aria-hidden="true">📮</span> Entrer mon code postal
+              </button>
+              <button type="button" class="locator__link" data-action="manual">
+                Voir tous les ateliers
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- WhatsApp fallback -->
+        <div class="locations__alt">
+          <p class="locations__alt-label">Une question avant de réserver ?</p>
+          <a href="https://wa.me/33781270676" class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true">📲</span> Écrire sur WhatsApp
+          </a>
+        </div>
+
+        <ul class="hero__trust hero__trust--center" role="list">
+          <li><span class="check" aria-hidden="true">✓</span> Réponse sous 24h</li>
+          <li><span class="check" aria-hidden="true">✓</span> Aucun frais à avancer</li>
+          <li><span class="check" aria-hidden="true">✓</span> Votre assurance couvre les dégâts de grêle</li>
+        </ul>
+
+        <p class="offer-terms">
+          *« Franchise offerte » correspond à une prise en charge par Euro Storm de la franchise d'assurance restant à votre charge, <strong>dans la limite de 350€</strong>, pour toute réparation d'un sinistre grêle réalisée à l'atelier partenaire Garage De L'Europe (62 Rue Jean Ligonnet, 69700 Givors), sous réserve d'éligibilité constatée lors du diagnostic. Offre non cumulable avec une autre offre. Les avantages proposés peuvent varier selon l'atelier partenaire.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============== SECTION 2 — CHOC ÉMOTIONNEL ============== -->
+    <section class="section section--light" aria-labelledby="pain-title">
+      <div class="container">
+        <p class="eyebrow">Vous venez de vivre ça ?</p>
+        <h2 id="pain-title" class="section__title">
+          Un matin, vous découvrez votre voiture. Des dizaines de bosses. Partout.
+        </h2>
+        <div class="prose">
+          <p>
+            La grêle ne prévient pas. En quelques minutes, votre capot, votre toit, vos ailes sont criblés d'impacts. Vous pensez aussitôt à des semaines d'attente chez le carrossier, à une facture salée, à des démarches avec votre assurance que vous ne savez pas comment gérer.
+          </p>
+          <p>
+            Et si tout ça pouvait se régler en quelques jours, sans peinture, avec une prise en charge complète par votre assurance ?
+          </p>
+        </div>
+
+        <a href="#process" class="btn btn--cta btn--lg btn--inline">
+          Découvrez comment <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============== SECTION 3 — LA SOLUTION (3 piliers) ============== -->
+    <section id="service" class="section section--dark" aria-labelledby="solution-title">
+      <div class="container">
+        <p class="eyebrow eyebrow--light">Notre promesse</p>
+        <h2 id="solution-title" class="section__title section__title--light">
+          Réparation rapide. Sans peinture. Prise en charge par votre assurance.
+        </h2>
+
+        <div class="cards cards--3">
+          <article class="card card--dark">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l3-3 4 4 7-7 4 4"/><path d="M3 17h18"/></svg>
+            </div>
+            <h3 class="card__title">Pilier 1 — Spécialistes du sans peinture</h3>
+            <p class="card__text">
+              Le débosselage sans peinture redonne à votre carrosserie son état d'origine sans ponçage, sans mastic, sans repeinture : votre peinture d'origine est préservée, la valeur de votre véhicule aussi. C'est notre priorité chaque fois que l'état de la peinture le permet — le diagnostic gratuit le confirme.
+            </p>
+          </article>
+
+          <article class="card card--dark">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3 class="card__title">Pilier 2 — Franchise offerte*</h3>
+            <p class="card__text">
+              Nous gérons votre dossier directement avec votre assureur — ni appels, ni formulaires, ni stress. Et nous prenons votre franchise en charge<sup>*</sup> : votre reste à charge peut tomber à 0€.
+            </p>
+          </article>
+
+          <article class="card card--dark">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/><path d="M8 15h3"/></svg>
+            </div>
+            <h3 class="card__title">Pilier 3 — Délais courts</h3>
+            <p class="card__text">
+              Votre véhicule vous revient en quelques jours, pas en semaines. Nous gérons tout, de la prise en charge assurance à la restitution.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============== SECTION 5 — COMMENT ÇA MARCHE ============== -->
+    <section id="process" class="section section--light" aria-labelledby="process-title">
+      <div class="container">
+        <p class="eyebrow">Un processus simple</p>
+        <h2 id="process-title" class="section__title">
+          De la grêle à votre voiture comme neuve — en 4 étapes.
+        </h2>
+
+        <ol class="steps" role="list">
+          <li class="step">
+            <span class="step__num">1</span>
+            <h3 class="step__title">Étape 1 — Contactez-nous</h3>
+            <p class="step__text">
+              Appelez-nous, envoyez un message WhatsApp ou remplissez notre formulaire en ligne. C'est gratuit, sans engagement, et vous obtenez une réponse sous 24h.
+            </p>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <h3 class="step__title">Étape 2 — Diagnostic gratuit</h3>
+            <p class="step__text">
+              Nos experts évaluent les dégâts de votre véhicule et estiment le montant pris en charge par votre assurance. Nous vous expliquons tout clairement, sans jargon.
+            </p>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <h3 class="step__title">Étape 3 — On gère tout avec votre assurance</h3>
+            <p class="step__text">
+              Euro Storm contacte directement votre assureur, coordonne l'expertise et prend en charge le dossier. Vous n'avez aucune démarche à effectuer.
+            </p>
+          </li>
+          <li class="step">
+            <span class="step__num">4</span>
+            <h3 class="step__title">Étape 4 — Réparation et restitution</h3>
+            <p class="step__text">
+              Nos techniciens interviennent — chez vous ou dans un atelier partenaire — et vous restituent votre véhicule en parfait état. Contrôle qualité sous notre tunnel de lumière avant chaque restitution.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============== SECTION 6 — POURQUOI LE DEBOSSELAGE ============== -->
+    <section class="section section--dark" aria-labelledby="pdr-title">
+      <div class="container">
+        <p class="eyebrow eyebrow--light">La technique</p>
+        <h2 id="pdr-title" class="section__title section__title--light">
+          Pourquoi le débosselage sans peinture change tout.
+        </h2>
+        <div class="prose prose--light">
+          <p>
+            La carrosserie traditionnelle implique démontage, ponçage, application de mastic et repeinture. C'est long, coûteux et cela affecte la peinture d'origine de votre véhicule — ce qui fait baisser sa cote à la revente.
+          </p>
+          <p>
+            Le débosselage sans peinture utilise des outils de précision pour repousser les bosses depuis l'intérieur du panneau. Résultat : votre peinture d'origine est intacte, votre voiture retrouve son aspect neuf en une à trois journées, et sa valeur est entièrement préservée.
+          </p>
+        </div>
+
+        <div class="compare" role="table" aria-label="Comparatif carrosserie traditionnelle vs débosselage sans peinture">
+          <div class="compare__row compare__row--head" role="row">
+            <div role="columnheader">Carrosserie traditionnelle</div>
+            <div role="columnheader">Débosselage sans peinture Euro Storm</div>
+          </div>
+          <div class="compare__row" role="row">
+            <div role="cell">Peinture d'origine abîmée</div>
+            <div role="cell" class="compare__win">Peinture d'origine préservée</div>
+          </div>
+          <div class="compare__row" role="row">
+            <div role="cell">2 à 4 semaines d'attente</div>
+            <div role="cell" class="compare__win">1 à 3 jours</div>
+          </div>
+          <div class="compare__row" role="row">
+            <div role="cell">Véhicule dévalué</div>
+            <div role="cell" class="compare__win">Valeur du véhicule préservée</div>
+          </div>
+          <div class="compare__row" role="row">
+            <div role="cell">Intervention lourde</div>
+            <div role="cell" class="compare__win">Intervention légère et précise</div>
+          </div>
+          <div class="compare__row" role="row">
+            <div role="cell">Coût élevé</div>
+            <div role="cell" class="compare__win">Pris en charge par votre assurance</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== SECTION 7 — STATS ============== -->
+    <section class="section section--light section--stats" aria-label="Chiffres clés">
+      <div class="container">
+        <ul class="stats" role="list">
+          <li class="stat">
+            <span class="stat__value">+5 000</span>
+            <span class="stat__label">Véhicules réparés depuis 2012</span>
+          </li>
+          <li class="stat">
+            <span class="stat__value">15 ans</span>
+            <span class="stat__label">D'expérience en débosselage sans peinture</span>
+          </li>
+          <li class="stat">
+            <span class="stat__value">100%</span>
+            <span class="stat__label">Sans peinture, sans mastic</span>
+          </li>
+          <li class="stat">
+            <span class="stat__value">24h</span>
+            <span class="stat__label">Pour intervenir dans le Rhône</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============== PROVA VISUAL — AVANT / APRÈS ============== -->
+    <section class="section section--light section--proof" aria-labelledby="proof-title">
+      <div class="container">
+        <p class="eyebrow">La preuve en images</p>
+        <h2 id="proof-title" class="section__title">
+          Une réparation propre, rapide et sans peinture.
+        </h2>
+
+        <figure class="proof">
+          <div class="proof__media">
+            <img src="assets/avant-apres.jpg" alt="Avant : capot d'une voiture criblé d'impacts de grêle. Après : carrosserie restaurée à son état d'origine grâce au débosselage sans peinture Euro Storm." width="1200" height="800" loading="lazy" decoding="async" />
+            <span class="proof__scanner" aria-hidden="true"></span>
+            <span class="proof__glow"    aria-hidden="true"></span>
+          </div>
+          <figcaption>Résultat réel obtenu en atelier — peinture d'origine préservée.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============== SECTION 8 — AVIS ============== -->
+    <section id="avis" class="section section--light" aria-labelledby="avis-title">
+      <div class="container">
+        <p class="eyebrow">Ils nous ont fait confiance</p>
+        <h2 id="avis-title" class="section__title">Ce que disent nos clients.</h2>
+
+        <div class="rating">
+          <div class="rating__stars" aria-hidden="true">★★★★★</div>
+          <p class="rating__text"><strong>4,9 / 5</strong> · Plus de 200 avis vérifiés</p>
+        </div>
+
+        <div class="testimonials">
+          <figure class="testimonial">
+            <blockquote>
+              "Je ne croyais pas que les bosses allaient disparaître aussi facilement. Le service était impeccable du début à la fin. Ma voiture est revenue de l'atelier comme si elle sortait de concession."
+            </blockquote>
+            <figcaption>— Mariana C., assurée Maif, Lyon</figcaption>
+          </figure>
+
+          <figure class="testimonial">
+            <blockquote>
+              "Après l'orage de grêle dans le Rhône, j'étais complètement dépassée. Euro Storm a tout géré avec mon assurance et ma voiture est parfaite. Je recommande à 100%."
+            </blockquote>
+            <figcaption>— Sophie L., assurée Allianz, Firminy</figcaption>
+          </figure>
+
+          <figure class="testimonial">
+            <blockquote>
+              "Un débosselage sans peinture vraiment bluffant : aucune trace des impacts, la peinture d'origine intacte. Travail soigné et équipe très professionnelle. Je recommande sans hésitation."
+            </blockquote>
+            <figcaption>— Daniel O., assuré Axa, Saint-Étienne</figcaption>
+          </figure>
+
+          <figure class="testimonial">
+            <blockquote>
+              "Réactifs, professionnels, honnêtes. Ils m'ont expliqué chaque étape. Ma voiture a retrouvé son état d'origine. Et la peinture est intacte — c'est ce qui m'importait le plus."
+            </blockquote>
+            <figcaption>— Jean-Pierre M., assuré Groupama, Annonay</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== SECTION 9 — FAQ ============== -->
+    <section class="section section--light" aria-labelledby="faq-title">
+      <div class="container container--narrow">
+        <p class="eyebrow">Vos questions</p>
+        <h2 id="faq-title" class="section__title">On répond à tout.</h2>
+
+        <div class="faq">
+          <details class="faq__item">
+            <summary class="faq__q">Ma voiture est-elle éligible à la réparation sans peinture ?</summary>
+            <div class="faq__a">
+              Dans la grande majorité des cas, oui. Le débosselage sans peinture convient parfaitement aux dommages causés par la grêle. Nos experts réalisent un diagnostic gratuit pour confirmer l'éligibilité et vous expliquer les options disponibles.
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__q">Dois-je déclarer le sinistre moi-même à mon assurance ?</summary>
+            <div class="faq__a">
+              Oui, la déclaration de sinistre se fait par vous auprès de votre assurance. Mais vous n'êtes pas seul : Euro Storm vous accompagne et vous assiste tout au long du dossier — expertise, devis et suivi.
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__q">Combien de temps dure la réparation ?</summary>
+            <div class="faq__a">
+              La plupart des véhicules sont restitués en 1 à 3 jours ouvrés selon l'étendue des dégâts. Nous vous communiquons un délai précis lors du diagnostic gratuit.
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__q">Intervenez-vous à Rive-de-Gier, Givors et dans tout le Rhône ?</summary>
+            <div class="faq__a">
+              Oui. Depuis notre atelier partenaire d'Givors, nous intervenons sur Rive-de-Gier, Givors, Vienne, Chasse-sur-Rhône, Grigny, Lyon et tout le département des Rhône (69).
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__q">Est-ce que le débosselage sans peinture affecte la garantie constructeur de mon véhicule ?</summary>
+            <div class="faq__a">
+              Non, elle reste entièrement valide. Le débosselage sans peinture n'implique aucun démontage structurel ni mécanique. Certaines garnitures peuvent toutefois être déposées pour accéder aux panneaux (ciel de toit, garnitures de portes, feux/optiques), sans aucun impact sur votre garantie constructeur.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer id="contact" class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.svg" alt="Euro Storm Débosselage" class="footer__logo" />
+        <p class="footer__tag">Euro Storm Débosselage — Experts en débosselage depuis 2012.</p>
+      </div>
+
+      <div class="footer__cols">
+        <nav class="footer__col" aria-label="Liens utiles">
+          <h3 class="footer__title">Liens</h3>
+          <a href="#service">Notre service</a>
+          <a href="#process">Comment ça marche</a>
+          <a href="#avis">Avis clients</a>
+          <a href="#contact">Contact</a>
+          <a href="#mentions">Mentions légales</a>
+          <a href="#rgpd">RGPD</a>
+        </nav>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Contact</h3>
+          <a href="tel:+33781270676"><span aria-hidden="true">📞</span> +33 7 81 27 06 76</a>
+          <a href="mailto:contact@eurostormdebosselage.com"><span aria-hidden="true">✉️</span> contact@eurostormdebosselage.com</a>
+          <a href="https://eurostormdebosselage.com" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">🌐</span> eurostormdebosselage.com</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Réseaux</h3>
+          <a href="#facebook">Facebook</a>
+          <a href="#instagram">Instagram</a>
+          <a href="#youtube">YouTube</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2024 Euro Storm Débosselage. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile CTA -->
+  <a href="#FORMULAIRE_AGENDA_GHL" class="sticky-cta" aria-label="Réserver mon diagnostic gratuit">
+    <span aria-hidden="true">📅</span> Réserver mon diagnostic gratuit
+  </a>
+
+  <!-- ============== MODAL CALENDRIER ============== -->
+  <div class="lmodal" id="locationModal" hidden role="dialog" aria-modal="true" aria-labelledby="lmodalTitle">
+    <div class="lmodal__backdrop" data-close></div>
+    <div class="lmodal__panel" role="document">
+      <header class="lmodal__head">
+        <div class="lmodal__head-text">
+          <p class="lmodal__eyebrow">Réservation diagnostic gratuit</p>
+          <h3 id="lmodalTitle" class="lmodal__title">—</h3>
+          <p id="lmodalAddr" class="lmodal__addr">—</p>
+        </div>
+        <button class="lmodal__close" type="button" aria-label="Fermer" data-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </header>
+      <div class="lmodal__body" id="lmodalBody">
+        <!-- iframe injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+
+  <!-- ============== BANNER DE CONSENTEMENT (RGPD) ============== -->
+  <div id="es-consent" class="es-consent" role="dialog" aria-label="Gestion des cookies" aria-live="polite" hidden>
+    <p class="es-consent__text">
+      Nous utilisons des cookies de mesure d'audience pour améliorer votre expérience. Vous pouvez accepter ou refuser. <a href="#rgpd">En savoir plus</a>.
+    </p>
+    <div class="es-consent__actions">
+      <button type="button" class="es-consent__btn es-consent__btn--refuse" data-consent="deny">Refuser</button>
+      <button type="button" class="es-consent__btn es-consent__btn--accept" data-consent="grant">Accepter</button>
+    </div>
+  </div>
+  <script>
+    (function(){
+      var KEY = 'es_consent';
+      var el = document.getElementById('es-consent');
+      if (!el) return;
+      function update(state){
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('consent','update',{
+          'ad_storage': state,
+          'ad_user_data': state,
+          'ad_personalization': state,
+          'analytics_storage': state
+        });
+      }
+      var saved = null;
+      try { saved = localStorage.getItem(KEY); } catch(e){}
+      if (saved !== 'granted' && saved !== 'denied') { el.hidden = false; }
+      el.addEventListener('click', function(e){
+        var btn = e.target.closest('[data-consent]');
+        if (!btn) return;
+        var grant = btn.getAttribute('data-consent') === 'grant';
+        try { localStorage.setItem(KEY, grant ? 'granted' : 'denied'); } catch(e){}
+        update(grant ? 'granted' : 'denied');
+        if (window.fbq) { fbq('consent', grant ? 'grant' : 'revoke'); }
+        el.hidden = true;
+      });
+    })();
+  </script>
+  <!-- ============== EXIT-INTENT POPUP ============== -->
+  <div id="es-exit" class="es-exit" hidden role="dialog" aria-modal="true" aria-labelledby="es-exit-title">
+    <div class="es-exit__backdrop" data-exit-close></div>
+    <div class="es-exit__panel" role="document">
+      <button class="es-exit__close" type="button" aria-label="Fermer" data-exit-close>&times;</button>
+      <p class="es-exit__eyebrow">Attendez ! 🎁</p>
+      <h2 id="es-exit-title" class="es-exit__title">Franchise offerte* — ne laissez pas filer votre place.</h2>
+      <p class="es-exit__text"><strong>Franchise offerte*</strong> — jusqu'à 0€ de reste à charge — à notre atelier de Givors. Diagnostic gratuit, sans engagement. Places limitées — réservez votre créneau.</p>
+      <a href="#FORMULAIRE_AGENDA_GHL" class="btn btn--cta btn--lg btn--block" data-exit-cta>Je réserve mon diagnostic gratuit →</a>
+      <button class="es-exit__dismiss" type="button" data-exit-close>Non merci, je verrai plus tard</button>
+    </div>
+  </div>
+  <script>
+    (function(){
+      var KEY = 'es_exit_shown';
+      var el = document.getElementById('es-exit');
+      if (!el) return;
+      var done = false;
+      try { if (sessionStorage.getItem(KEY)) done = true; } catch(e){}
+      function open(){
+        if (done) return;
+        done = true;
+        try { sessionStorage.setItem(KEY, '1'); } catch(e){}
+        el.hidden = false;
+        document.body.style.overflow = 'hidden';
+      }
+      function close(){ el.hidden = true; document.body.style.overflow = ''; }
+      el.addEventListener('click', function(e){
+        if (e.target.closest('[data-exit-cta]')) { close(); return; } // laisse l'ancre défiler
+        if (e.target.closest('[data-exit-close]')) { close(); }
+      });
+      document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
+      // Desktop : la souris quitte par le haut de la fenêtre
+      document.addEventListener('mouseout', function(e){
+        if (e.clientY <= 0 && !e.relatedTarget && !e.toElement) { open(); }
+      });
+      // Mobile : remontée rapide vers le haut de page (intention de sortie)
+      var lastY = window.scrollY;
+      window.addEventListener('scroll', function(){
+        var y = window.scrollY;
+        if (lastY - y > 45 && y < 320) { open(); }
+        lastY = y;
+      }, { passive: true });
+    })();
+  </script>
+
+  <!-- ============== (compte à rebours retiré : pas de deadline sur cette LP) ============== -->
+  <script>
+    (function(){
+      var timers = Array.prototype.slice.call(document.querySelectorAll('.es-countdown'));
+      if (!timers.length) return;
+
+      function pad(n){ return (n < 10 ? '0' : '') + n; }
+
+      function render(){
+        var now = Date.now();
+        var allEnded = true;
+        timers.forEach(function(t){
+          var deadline = new Date(t.getAttribute('data-deadline')).getTime();
+          var diff = deadline - now;
+          if (isNaN(deadline)) return;
+          if (diff <= 0){
+            t.classList.add('is-ended');
+            return;
+          }
+          allEnded = false;
+          var s = Math.floor(diff / 1000);
+          var d = Math.floor(s / 86400); s -= d * 86400;
+          var h = Math.floor(s / 3600);  s -= h * 3600;
+          var m = Math.floor(s / 60);    s -= m * 60;
+          var set = function(k, v){
+            var el = t.querySelector('[data-cd="' + k + '"]');
+            if (el) el.textContent = (k === 'd') ? d : pad(v);
+          };
+          set('d', d); set('h', h); set('m', m); set('s', s);
+        });
+        return allEnded;
+      }
+
+      render();
+      var iv = setInterval(function(){
+        if (render() === true) { clearInterval(iv); }
+      }, 1000);
+    })();
+  </script>
+</body>
+</html>
