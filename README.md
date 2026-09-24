@@ -14,7 +14,7 @@ Atelier partenaire **Garage De L'Europe**, 62 Rue Jean Ligonnet, 69700 Givors.
 - Sem contador de tempo. Urgência = vagas limitadas.
 - Nunca prometer "réparation sans peinture" garantida → "**Spécialistes du sans peinture**".
 - Calendário GHL `CNPlpXm6WS2WGaZ59jTE` · UTM `givors_grele_franchise`.
-- Tracking: GTM `GTM-P9VBVXZL` + Meta Pixel `1616665653085876` (consent-gated).
+- Tracking: GTM `GTM-WMZGW5QZ` + Meta Pixel `1616665653085876` (consent-gated).
 
 ## Local
 ```bash
